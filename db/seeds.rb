@@ -13,3 +13,23 @@ campuses = School.create([
   {name: 'Northeast'},
   {name: 'Connect'}
 ])
+
+courses = Course.create([
+  {name: 'BCIS 1305'},  
+  {name: 'BMGT 1301'},  
+  {name: 'BUSI 1301'},  
+  {name: 'CHEM 1405'},  
+  {name: 'CHEM 1406'},  
+  {name: 'COSC 1301'},  
+  {name: 'COSC 1436'},  
+  {name: 'EDUC 1301'},  
+  {name: 'ENGL 1302'},  
+  {name: 'ENGL 2332'},  
+  {name: 'GOVT 2305'},
+  {name: 'HIST 1302'},  
+  {name: 'ITSW 1407'},  
+  {name: 'MATH 1314'},  
+  {name: 'MUSI 1306'},  
+  {name: 'PSYC 2301'},  
+  {name: 'SPCH 1311'}  
+])

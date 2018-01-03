@@ -4,6 +4,8 @@
     <%= f.text_field(:last_name, placeholder: "Last Name") %> <br />
     <%= f.label :"Campus:" %>
     <%= f.collection_select(:school_id, School.all, :id, :name) %>
+    <%= f.label :"First Day Course:" %>
+    <%= f.collection_select(:course_id, Course.all, :id, :name) %>
     <br />
     <%= f.submit :"Add Purchase" %>
   <% end %>  

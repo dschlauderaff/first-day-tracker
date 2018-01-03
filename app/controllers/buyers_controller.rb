@@ -1,7 +1,7 @@
 class BuyersController < ApplicationController
   def show
     # @buyer = Buyer.new
-    @buyers = Buyer.order(last_name: :desc)
+    @buyers = Buyer.order(last_name: :asc)
   end
 
   def create
@@ -11,6 +11,6 @@ class BuyersController < ApplicationController
   private
 
   def buyer_params
-    params.require(:buyer).permit(:first_name, :last_name, :school_id)
+    params.require(:buyer).permit(:first_name, :last_name, :school_id, :course_id)
   end
 end

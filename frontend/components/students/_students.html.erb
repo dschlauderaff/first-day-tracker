@@ -1,1 +1,7 @@
-this will be the students list
+<div class="students js-students">
+  <div class="students--content js-students--content">
+    <% buyers.each do |student| %>
+      <%= c("student", student: student) %>
+    <% end %>
+  </div>
+</div>
