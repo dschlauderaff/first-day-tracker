@@ -4,6 +4,6 @@
 require_relative 'config/application'
 
 # explicitly define assets:precompile for deployment to Heroku
-Rails::Task.define_task("assets:precompile" => ["yarn:install", "webpacker:compile"])
+Rake::Task.define_task("assets:precompile" => ["yarn:install", "webpacker:compile"])
 
 Rails.application.load_tasks
