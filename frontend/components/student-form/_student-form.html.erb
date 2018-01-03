@@ -7,6 +7,6 @@
     <%= f.label :"First Day Course:" %>
     <%= f.collection_select(:course_id, Course.all, :id, :name) %>
     <br />
-    <%= f.submit :"Add Purchase" %>
+    <%= f.submit :"Add Purchase", class: "js-student-form-submit" %>
   <% end %>  
 </div>

@@ -4,11 +4,12 @@
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
     "coffeescript": "1.12.7",
+    "fetch": "^1.1.0",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.9.7",
     "stylelint": "^8.1.1",
-    "stylelint-config-standard": "^17.0.0"
+    "stylelint-config-standard": "^17.0.0",
+    "webpack-dev-server": "^2.9.7"
   }
 }
