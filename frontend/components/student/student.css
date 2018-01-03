@@ -1,5 +1,7 @@
 .student {
   margin: 12px 6px;
+  display: flex;
+  width: 100%;
 
   &:first-child {
     margin-top: 0;
@@ -11,14 +13,19 @@
 
   &--name {
     font-weight: bold;
+    flex: 1 1 200px;
   }
 
   &--campus {
     color: rgba(0, 0, 0, 0.5);
-    font-size: 12px;
+    flex: 1 1 auto;
+
+    /* font-size: 12px; */
   }
 
-  &--course p {
+  &--course  {
+    flex: 1 1 auto;
+
     margin: 0;
   }
 }
