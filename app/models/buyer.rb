@@ -1,4 +1,4 @@
 class Buyer < ApplicationRecord
   has_many :courses
-  has_many :schools
+  belongs_to :school
 end

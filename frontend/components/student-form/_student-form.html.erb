@@ -1,0 +1,10 @@
+<div class="student-form js-student-form">
+  <%= form_with scope: :buyer, url: '/' do |f| %>
+    <%= f.text_field(:first_name, placeholder: "First Name") %>
+    <%= f.text_field(:last_name, placeholder: "Last Name") %> <br />
+    <%= f.label :"Campus:" %>
+    <%= f.collection_select(:school_id, School.all, :id, :name) %>
+    <br />
+    <%= f.submit :"Add Purchase" %>
+  <% end %>  
+</div>
